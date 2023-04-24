@@ -1,0 +1,148 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+{% load static %}
+
+
+
+<header>
+  <div class="container col-xxl-8 px-1 py-2">
+    <div class="row flex-lg-row-reverse align-items-center g-4 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="{% static 'cv/logo4.png'%}" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold lh-1 mb-3 text-light h1">Kevin Danilo</h1>
+        <p class="lead text-light fw-bold">Profecional en desarrollador web con experiencia en HTML5, CSS3, JavaScript, Django, Python, Mysql. Consultor de Ciberseguridad (Pentester) con habilidades en pruebas de penetración.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <button type="button" class="btn bg-gradient fw-bold btn-lg px-4 me-md-2">Proyectos</button>
+        </div>
+      </div>
+    </div>
+  </div>  
+</header>
+
+<main>
+  <div class="container lg-px-4 py-5" id="hanging-icons">
+    <h2 class="pb-2 text-light h2 fw-bold">Habilidades</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="col d-flex align-items-start">
+        <div class="icon-square text-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <i class="bi bi-code-square" width="25em" height="10em"></i>
+          
+        </div>
+        <div class="justify-content-center align-items-center">
+          <h3 class="fs-2 h3 fw-bold">Desarrollor Frontend</h3>
+          <p class="p fw-bold">Conocimiento en leguajes de maquetacion y desarrollo web con HTML, CSS conBootstrap y JavaScript.</p>
+          <img class="align-items-center" width="140" height="140" src="{% static 'cv/desarroll_1.jpg' %}"></img>
+          desarroll_1
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square text-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <i class="bi bi-shield-shaded" width="25em" height="10em"></i>
+        </div>
+        <div >
+          <h3 class="fs-2 h3 fw-bold ">Cibersegiridad</h3>
+          <p class="p fw-bold">Conocimiento en pruebas penetracion y hermamientas como Nmap, Metasploit, Wireshark, Burp Suite.</p>
+          <img class="align-items-center" width="140" height="140" src="{% static 'cv/cibersegiridad_en_web_1.png' %}"></img>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square text-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          <i class="bi bi-database-fill-gear" width="25em" height="10em"></i>
+        </div>
+        <div>
+          <h3 class="fs-2 h3 fw-bold">Desarrollor Backend</h3>
+          <p class="p fw-bold">Conocimiento en lenguajes Backend como Python con el frameworks Django y base de datos con Msql.</p>
+          <img class="align-items-center" width="180" height="180" src="{% static 'cv/base_de_datos.jpg' %}"></img>
+          base_de_datos
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+</main>
+
+
+
+  <div class="container px-4 py-5" id="custom-cards">
+    <h2 class="pb-2 h2 fw-bold">Proyectos</h2>
+
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" src="{% static 'cv/base_de_datos.jpg' %}" >
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold h3">
+                WebSite: 
+                Cultivartegenetics.io</h3>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+              </li>
+              <li class="d-flex align-items-center me-3">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                <small>Earth</small>
+              </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                <small>3d</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-2.jpg');">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold h3">
+                Pentester:
+                Hack the box
+
+            </h3>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+              </li>
+              <li class="d-flex align-items-center me-3">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                <small>Pakistan</small>
+              </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                <small>4d</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('static 'cv/base_de_datos.jpg');">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold h3">App: Game </h3>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto">
+                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+              </li>
+              <li class="d-flex align-items-center me-3">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                <small>California</small>
+              </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                <small>5d</small>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+{% endblock %}

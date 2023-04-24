@@ -1,0 +1,32 @@
+{% load static %}
+<nav class="navbar navbar-expand-lg sticky-top navbar-dark ">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <img src="{% static 'cv/logo2.png' %}" alt="">
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-lg-auto">
+        <li class="nav-item">
+          <a class="nav-link active fw-bold" aria-current="page" href="/">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bold" aria-current="page" href="{% url 'blog:posts' %}">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bold" aria-current="page" href="{% url 'blog:posts' %}">Contacto</a>
+        </li>
+        <li class=" d-flex align-items-center ">
+          <a class="btn bg-gradient text-light btn-sm fw-bold " aria-current="page" href="{% static 'cv/CV_KC.pdf'%}"
+            target="_blank">Download CV</a>
+        </li>
+
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
